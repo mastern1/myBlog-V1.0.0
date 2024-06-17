@@ -74,18 +74,20 @@ body{
      margin-top: 10%;
 }
 .no-comment2{
-     position: relative;
-     text-align: center;
-     left: 152px;
-     top: 49px;
+     grid-column: 1 / 4;
+     grid-row: 1 / 4 ;
+     place-self: center;
      font-size: 2rem;
      font-weight: bold;
+     z-index: 1000;
 }
 
 
     @media(max-width:576px){
      .no-comment2{
-        display: contents;
+          position: relative;
+          left: 20%;
+          top: 40%;
         font-size: 2rem;
         font-weight: bold;
      }
