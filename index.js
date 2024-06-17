@@ -1,4 +1,3 @@
-import sharp from "sharp";
 import express from "express";
 import { localsName, name } from "ejs";
 const app = express();
@@ -16,18 +15,14 @@ app.get("/",(req, res) =>{
 
 app.get("/posting",(req, res) =>{
 
-
  res.render("partials/post.ejs");
-})
+});
 
 app.post("/post",(req, res) =>{
  
-
-res.render("index.ejs", req.body)
+res.render("index.ejs", req.body);
  
- 
-  
-})
+});
 
 
 app.listen(port, () =>{
