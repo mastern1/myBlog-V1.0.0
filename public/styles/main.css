@@ -1,0 +1,109 @@
+body{
+ margin: 20px; 
+ background-color: rgb(200, 194, 194);  
+}
+.navbar{
+     border-radius: 10px;
+}
+
+.ff{
+     background-image: url("https://img.freepik.com/free-vector/egyptian-desert-with-river-pyramids-night_107791-4618.jpg?w=1380&t=st=1718445035~exp=1718445635~hmac=83e553ba18f94621fe41e779e48fdf225677289ea5dd80363d25c418cd9d4005");
+     background-size: 93%;
+     background-repeat: repeat;
+     background-position: center;
+    }
+    .container-post{
+     display: flex;
+     justify-content: center;
+    }
+    .posting{
+     padding-left: 11px;
+        width: 270px;
+        border: solid black 2px;
+        border-radius: 15px;
+    }
+    
+    
+    body > section.container-post > div > form > textarea{
+     border: solid black 2px;
+     border-radius: 15px;
+    }
+    body > section.container-post > div > form > input{
+     border-radius: 13px;
+     margin-left: 80px;
+    }
+.container-box{
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+     
+}
+.boxs{
+     display: grid;
+     width: 50%;
+     height: 200px;
+     background-color: gainsboro;
+     padding:  10px;
+     border-radius: 10px;
+     grid-template-columns: 2fr 2fr;
+     grid-template-rows: 55px 20px 2fr;
+}
+.comment{
+     font-weight: bold;
+}
+.item5{
+     grid-column-start: 2;
+     grid-column-end: 3;
+     display: flex;
+     justify-content: right;
+     align-items: end;
+     flex-direction: row;
+     gap: 2px;
+}
+.x{
+     display: none;
+}
+.y{
+     display: block;
+}
+.time{
+    align-self: center;
+}
+.no-comment{
+     text-align: center;
+     margin-top: 10%;
+}
+.no-comment2{
+     position: relative;
+     text-align: center;
+     left: 152px;
+     top: 49px;
+     font-size: 2rem;
+     font-weight: bold;
+}
+
+
+    @media(max-width:576px){
+     .no-comment2{
+        display: contents;
+        font-size: 2rem;
+        font-weight: bold;
+     }
+    
+     .ff{
+          background-repeat: no-repeat;
+          background-size: cover;   
+     }
+     .boxs{
+          display: block;
+          height: 335px;  
+     }
+     .item5{
+         width: 179px;
+     }
+     .no-comment{
+          text-align: center;
+          margin-top: 70%;
+     }
+    }
+    

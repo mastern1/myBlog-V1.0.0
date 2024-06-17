@@ -1,0 +1,28 @@
+<%- include("header.ejs") %>
+<p class="h2 text-center mt-4 mb-0" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Talk about what you think of us</p>
+<div class="container d-flex justify-content-center ">
+<div class="card mt-5 p-3" style="width: 18rem;">
+    <h5 class="card-title ps-2 pb-2 pt-2">Post</h5>
+    <form action="/post" method="post">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="title" name="title" required>
+        <label for="floatingInput">Title</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" class="form-control my-2" id="floatingPassword" placeholder="name" name="name" required>
+        <label for="floatingPassword">Name</label>
+      </div>
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="comment" required></textarea>
+        <label for="floatingTextarea2">Comments</label>
+      </div>
+      <input class="btn btn-outline-secondary my-2" type="submit" value="Submit">
+
+  </form>
+  </div>
+</div>
+
+
+
+
+<%- include("footer.ejs") %>
